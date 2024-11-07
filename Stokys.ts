@@ -175,10 +175,10 @@ namespace stokys {
     //% group="Roboter"
     //% inlineInputMode=inline
     export function robotPositionDeltaBlock(id: RobotMotors, delta: number): void {
-        if (id == RobotMotors.MotorLinks) {
-            motorPositionDeltaBlock(DCMotors.Motor1, -1.0 * delta)
-        } else if (id == RobotMotors.MotorRechts) {
-            motorPositionDeltaBlock(DCMotors.Motor3, delta)
+        if (id == RobotMotors.MotorRechts) {
+            motorPositionDeltaBlock(DCMotors.Motor3, -1.0 * delta)
+        } else if (id == RobotMotors.MotorLinks) {
+            motorPositionDeltaBlock(DCMotors.Motor1, delta)
         }
     }
 
